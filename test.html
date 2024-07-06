@@ -1,0 +1,16 @@
+<body>
+<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+
+<div id="graph" style="width: 600px; height: 400px;"></div>
+
+<script>
+  // Xの値を書く
+  var x = [0.0, 1.0, 2.0, 3.0];
+  // Yの値を書く
+  var y = [0.0, 1.0 ** 2.0, 2.0 ** 2.0, 3.0 ** 2.0 ];
+  var data = [{ name: 'sample', x : x, y : y}];
+  var layout = { legend : { showlegend : false } };
+  Plotly.newPlot("graph", data, layout);
+</script>
+
+</body>
